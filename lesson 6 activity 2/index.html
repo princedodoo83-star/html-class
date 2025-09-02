@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang"en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+           <legend>Personal Information</legend>
+           <label for="name">Full Name:</label>
+           <input type="text" id="name" name="name" required>
+           <br><br>
+
+           <label>Email:</label>
+           <input type="email" name="email" required>
+           <br><br>
+
+           <label>Phone Number:</label>
+           <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+           <small>Format: 123-456-7890</small><br><br>
+           
+           <label>Gender</label>
+           <input type="radio" id="gender" value="female">Female
+           <input type="radio" id="gender" value="male">Male<br><br>
+
+           <label>Birthday</label>
+           <input type="date" id="birthday" name="birthday"><br><br>
+           <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+</html>
